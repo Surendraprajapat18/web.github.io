@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Contact | Surendra Prajapat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+```
+<!-- Main CSS -->
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+```
+
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper">
+
+<!-- Header -->
+
+<header id="header">
+    <a href="index.html" class="logo">
+        <strong>Surendra</strong> <span>Portfolio</span>
+    </a>
+    <nav>
+        <a href="#menu">Menu</a>
+    </nav>
+</header>
+
+<!-- Menu -->
+
+<nav id="menu">
+    <div class="inner">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="landing.html">Projects</a></li>
+            <li><a href="generic.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Banner -->
+
+<section id="banner" class="style2">
+    <div class="inner">
+        <header class="major">
+            <h1>Contact Me</h1>
+        </header>
+        <div class="content">
+            <p>Let’s connect for opportunities, collaborations, or tech discussions 🚀</p>
+        </div>
+    </div>
+</section>
+
+<!-- Main -->
+
+<div id="main">
+
+<!-- Contact Info Cards -->
+
+<section>
+<div class="inner">
+
+<header class="major">
+    <h2>Get In Touch</h2>
+</header>
+
+<div class="row">
+
+<div class="col-6 col-12-medium">
+<div class="box">
+<h3><span class="icon solid fa-envelope"></span> Email</h3>
+<p>
+<a href="mailto:prajapatsurendra78980@gmail.com">
+prajapatsurendra78980@gmail.com
+</a>
+</p>
+</div>
+</div>
+
+<div class="col-6 col-12-medium">
+<div class="box">
+<h3><span class="icon solid fa-phone"></span> Contact Number</h3>
+<p>
+<a href="tel:+917415457965">
++91 7415457965
+</a>
+</p>
+</div>
+</div>
+
+<div class="col-6 col-12-medium">
+<div class="box">
+<h3><span class="icon brands fa-linkedin"></span> LinkedIn</h3>
+<p>
+<a href="https://www.linkedin.com/in/surendraprajapat18" target="_blank">
+linkedin.com/in/surendraprajapat18
+</a>
+</p>
+</div>
+</div>
+
+<div class="col-6 col-12-medium">
+<div class="box">
+<h3><span class="icon brands fa-github"></span> GitHub</h3>
+<p>
+<a href="https://github.com/Surendraprajapat18" target="_blank">
+github.com/Surendraprajapat18
+</a>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Contact Form Connected to Google Sheet -->
+
+<section>
+<div class="inner">
+
+<header class="major">
+    <h2>Send a Message</h2>
+</header>
+
+<form id="contact-form">
+
+<div class="fields">
+
+<div class="field half">
+<label>Name</label>
+<input type="text" name="name" required />
+</div>
+
+<div class="field half">
+<label>Email</label>
+<input type="email" name="email" required />
+</div>
+
+<div class="field half">
+<label>Contact Number</label>
+<input type="text" name="contact" required />
+</div>
+
+<div class="field">
+<label>Message</label>
+<textarea name="message" rows="6" required></textarea>
+</div>
+
+</div>
+
+<ul class="actions">
+<li><button type="submit" class="primary">Send Message</button></li>
+<li><input type="reset" value="Reset" /></li>
+</ul>
+
+</form>
+
+<p id="status"></p>
+
+</div>
+</section>
+
+</div>
+
+<!-- Footer -->
+
+<footer id="footer">
+<div class="inner">
+
+<ul class="icons">
+<!-- FOOTER -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://github.com/Surendraprajapat18" target="_blank" class="icon brands alt fa-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/surendraprajapat18" target="_blank" class="icon brands alt fa-linkedin-in"></a></li>
+                <li><a href="https://www.instagram.com/thisisurendra17/" target="_blank" class="icon brands alt fa-instagram"></a></li>
+                <li><a href="https://www.kaggle.com/surendraprajapat" target="_blank" class="icon brands alt fa-kaggle"></a></li>
+            </ul>
+        </div>
+    </footer>
+</ul>
+
+<ul class="copyright">
+<li>© Surendra Prajapat</li>
+<li>Portfolio</li>
+</ul>
+
+</div>
+</footer>
+
+</div>
+
+<!-- ================= GOOGLE SHEET SCRIPT ================= -->
+
+<script>
+
+const scriptURL =
+"https://script.google.com/macros/s/AKfycbydA6ZERVVEiUR8tdwxO6TcNx0Ml1nLZqssLrxCgV4mOF2jtqselVavre1wWuctVbHfEw/exec";
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("status");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const formData = new FormData(form);
+
+fetch(scriptURL, {
+method: "POST",
+body: formData
+})
+.then(res => res.text())
+.then(data => {
+
+status.innerHTML =
+"✅ Message Sent Successfully!";
+status.style.color = "#6fc3df";
+
+form.reset();
+
+})
+.catch(err => {
+
+status.innerHTML =
+"❌ Error sending message.";
+status.style.color = "red";
+
+});
+
+});
+
+</script>
+
+
+
+<!-- Template Scripts -->
+
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/jquery.scrolly.min.js"></script>
+
+<script src="assets/js/jquery.scrollex.min.js"></script>
+
+<script src="assets/js/browser.min.js"></script>
+
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

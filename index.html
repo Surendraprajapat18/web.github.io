@@ -1,82 +1,130 @@
 <!DOCTYPE HTML>
-<html lang="en">
-	
 <html>
-	<head>
-	    <title>Surendra Prajapat Portfolio Web</title>
-	    <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	    <link rel="stylesheet" href="assets/css/main.css" />
-	    <link rel="icon" href="images/Profile.png" type="images/Profile.png">
-	    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	    <noscript>
-	        <link rel="stylesheet" href="assets/css/noscript.css" />
-	    </noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Surendra Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-				<!-- Header -->
-					<header id="header" class="alt" style="background-image: url('path/to/header-background.jpg');">
-				            <a href="index.html" class="logo"><strong>Surendra</strong> <span>Portfolio Web</span></a>
-				            <nav>
-				                <a href="#menu">Menu</a>
-				            </nav>
-				        </header>
+<body class="is-preload">
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Projects</a></li>
-							<li><a href="generic.html">About</a></li>
-						</ul>
-					</nav>
-					
-				<!-- Banner -->
-					<section id="banner" class="major">
-				            <div class="inner">
-				                <center>
-				                    <img class="circular--square" src="images/Profile.png" alt="Avatar" width="244" height="244">
-				                </center>
-				                <header class="major">
-				                    <h1>Hi, I'm Surendra Prajapat</h1>
-				                </header>
-				                <div class="content">
-				                    <p>Data Analyst/Data Engineer skilled in SQL(Intermediate), DBMS, Python, Machine Learning, Power BI, AWS(S3, EC2 Instance, IAM).</p>
-				                    <ul class="actions">
-				                        <li><a href="#one" class="button next scrolly">Projects</a></li>
-				                    </ul>
-				                </div>
-				            </div>
-				        </section>
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Header -->
+    <header id="header" class="alt" style="background-image: url('path/to/header-background.jpg');">
+            <a href="index.html" class="logo"><strong>Surendra</strong> <span>Portfolio Web</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="landing.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= HERO / BANNER ================= -->
+
+    <section id="banner" class="major">
+
+        <div class="hero-container">
+
+            <!-- LEFT PROFILE -->
+            <div class="hero-left">
+                <img src="images/Profile.png" alt="Surendra" class="hero-img" />
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="hero-right">
+
+                <h4 class="intro">Hi, I'm</h4>
+
+                <h1 class="name">
+                    Surendra <br> Prajapat
+                </h1>
+
+                <p class="tagline">
+                    Data Engineer • Gen AI Enthusiast • AWS Cloud Specialist
+                </p>
+
+                <!-- Buttons -->
+                <div class="hero-buttons">
+                    <a href="landing.html" class="button primary">View Projects</a>
+                    <a href="about.html" class="button">About Me</a>
+                    <a href="assets/SurendraCV.pdf" class="button">Resume</a>
+                </div>
+
+                <!-- Skills -->
+                <div class="hero-skills">
+                    <span>Python</span>
+                    <span>PySpark</span>
+                    <span>AWS</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>Gen AI</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATS SECTION ================= -->
+
+    <section id="main" class="alt">
+        <div class="inner">
+
+            <header class="major">
+                <h2>Professional Snapshot</h2>
+            </header>
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+                    <h3>2+ Years</h3>
+                    <p>Experience in Data & Cloud Engineering</p>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <h3>15+ Projects</h3>
+                    <p>Data, AI & Analytics Solutions Delivered</p>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <h3>5+ Certifications</h3>
+                    <p>AWS & Data Engineering Credentials</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FEATURED WORK ================= -->
+
+    <section id="main">
+        <div class="inner">
+
+            <header class="major">
+                <h2>Featured Work</h2>
+            </header>
+
+            <div id="main">
 
 						<!-- One -->
 							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/Spam-mail.png" alt="" width="original_width" height="original_height" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Spam Email Prediction</a></h3>
-										<p>Machine Learning</p>
-									</header>
-								</article>
-
-								<article>
-									<span class="image">
-										<img src="images/Dog-Cat.png" alt="" width="original_width" height="original_height" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Dog vs Cat Classification</a></h3>
-										<p>Machine Learning</p>
-									</header>
-								</article>
 
 								<article>
 									<span class="image">
@@ -118,92 +166,66 @@
 									</header>
 								</article>
 
-								<article>
-									<span class="image">
-										<img src="images/Global_Super_Store (1).jpg" alt="" width="original_width" height="original_height" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Global Superstore Data Analysis Dashboard</a></h3>
-										<p>Power BI</p>
-									</header>
-								</article>
-
-
-								
-
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Music Store Data Analysis</a></h3>
-										<p>SQL</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Surendra Prajapat</h2>
-									</header>
-									<p>I am currently working as a System Engineer at Tata Consultancy Services (TCS), where I contribute to Generative AI–based projects with a strong focus on AWS Cloud services. 
-										My role involves designing and implementing cloud-driven solutions that are secure, scalable, and efficient, helping organizations harness the power of AI and cloud technologies for innovation.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Projects</a></li>
-									</ul>
-								</div>
-							</section>
+	
 					</div>
 
-				<!-- Contact 
-					<section id="contact" style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0PDysZFRkrNysrKystLTc3KzcrLTctLS0tKystLS0tLSstLSsrLSsrKysrKystKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAf/xAAiEAEBAQEAAgIDAQADAAAAAAAAARECEiEDQTFRYZFxgdH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/APDwZgWDDAFgMgABgRWKICB4MBIVgBIOgCBgCBjAIzICBgCBkAAAAGAIAAQMAAADQHhRQYDgQSFWDFCGKkFBIxeF4gnCUdQRgxRKFgxeCxBnh4rB4gjDPDwE4SsGAnBhjFCJWBAsJQwCJeDATgVhWAnBhngJCsANMFiuJ6PxUZqkPFcwEXkSNOomxFKcjxVD5URgXhXkEWDFHIIzvJzlXUEgqcFaYmiJwsUcgqLBirCwROHIrDwEeJY1xOAjCxWHgIw5F3kYip8Ri8AM8K8tLBgMpFK7heIIMyBrIqlzyrx9NIXJ0pD5mopE1wus+gRzFSJquYB2Cw4ajOQdRXUKCJOQ7CRVcwryfK/EGPiUi6QF4i8nhyAmQ8XeYmhCxLZHXIM8GLkPDBNKKsOAXiWLnKcRSwsXIXQiKOgVBOgBUb/HFdVPEWomnYrxPwRWelF2DwBM5Xkib/f9F6UEV4p5V1RDkLrkrR5inyVp1NA5FcpkLqgvE9cNOaOgZyF1F4XfKKz9nxFzlnYI1hXlMVyKV5Fh2l7ET0Xi0nNLuAnCsXFyTE1cxhSdF5jPvkEThPXLTE9KjMACN+FaiHii58ieu9PvnETkVpzD6/hcz+q8QLmDn4z5PyRYXgWLkPFSMLNXx8X7VeE9Am+iqpwnAEiaseICdNOaxytPjtA+6nVdVMRStJdR4qi8TKcGIosEp+AwBOixC+aIns+ekLkA+6nrrR3UakWmmqtK1URgSBG/ji+b+/8AUnzFVp8kjGKkGIL1NolNQ5B1yviYffSKylXz2WfYv/CoPsu4OafUBPl6TPX5ORN+P2IrNPxTzK1+Oz9io55/YlxdxHdRT/LOtZDEL440nDL41ddZ+fahd9RHN9/+tO+IPj5RU38qtNPeAixKhKCacK08ELqJi8RgHqbDl9JvQJwNL1AB2q+kHKGL+isLRAOUaijVG07TiebPutNBNn4aeOotytJ1oJvxjf39K66+vsuvwB+U/wBZW56Ln8l8tELT4ntNXOPsDuF4qz2154gMr6/KpN9qrGXLgrfj7L5L6Gl5fQMuZb6aeTPm5T76QXUWf8lxTtULE2f1cgqDP/tcTTAdT+p604QCM+mkT2DIACNIrU6WqNPIcs4rlA+hBAKchpK9Ki+6fPyVl5aIDfzLz/rOlUVv5ptRL6HnIo1nMibRz3qO+xFTv9r5+TZ+WPXXplOrAdfXWT8stqObftrOQXz16TfZXhM6FTdXzBonSB+JaL0VqivMvIoKinaJU0tQXBWcO1UFqDT0gVgAVDlVrHnpc6BdKdF5ECrVTpnpgukWp0Fzo7WQ0Fac6SNBUo8S5PQPTlTStBcPqax8lc9g0lVrHVToF9dIhlgH5EkaCk+RAGk6K1MAK8itSLUU9PWYxUXqSGAZFn9AqNXrPVSoipT1GiA00agaorRpAD0SlRAGnKRgrUaCBemzGgu0sKAFQJOQF8dHekaXkCsPClFACUiBWjSIFaRADIEAAKophIBOHoAhQwFDgAA8AAAAANEoAHqZTAFpaYQA0wA0SgKHSlMAeneiADSAA5StAAtUAgVAAoFAAsMAH//Z');">
-						<div class="inner">
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">prajapatsurendra78980@gmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(+91) 7415457965</span>
-									</div>
-								</section>
-								
-							</section>
-						</div>
-					</section> -->
+        </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/Surendraprajapat18" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/surendraprajapat18" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn/</span></a></li>
-								<li><a href="https://www.instagram.com/thisissurendra17/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>	
-								<li><a href="https://www.kaggle.com/surendraprajapat" class="icon brands alt fa-kaggle"><span class="label">kaggle</span></a></li>							
-							</ul>
-							
-						</div>
-					</footer>
+    <!-- ================= CONTACT CTA ================= -->
 
-			</div>
+    <section id="contact">
+        <div class="inner">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <section>
+                <header class="major">
+                    <h2>Let’s Work Together</h2>
+                </header>
 
-	</body>
+                <p>
+                    Interested in collaborating on Data Engineering,
+                    Gen AI, or Cloud projects? Let’s connect.
+                </p>
+
+                <ul class="actions">
+                    <li><a href="contact.html" class="button primary">Contact Me</a></li>
+                </ul>
+            </section>
+
+
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://github.com/Surendraprajapat18" target="_blank" class="icon brands alt fa-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/surendraprajapat18" target="_blank" class="icon brands alt fa-linkedin-in"></a></li>
+                <li><a href="https://www.instagram.com/thisisurendra17/" target="_blank" class="icon brands alt fa-instagram"></a></li>
+                <li><a href="https://www.kaggle.com/surendraprajapat" target="_blank" class="icon brands alt fa-kaggle"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="copyright">
+                <li>© Surendra Prajapat</li>
+                <li>Data Engineer Portfolio</li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
-
