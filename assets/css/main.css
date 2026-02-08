@@ -3953,3 +3953,133 @@ input, select, textarea {
 			visibility: visible;
 		}
 		
+/* ================================
+   HERO SECTION UPGRADE (HOME TOP)
+================================ */
+
+/* Banner Background Upgrade */
+#banner {
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364) !important;
+    background-image: none !important;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 40px 80px 40px;
+}
+
+/* Overlay reduce darkness */
+#banner:after {
+    opacity: 0.55 !important;
+}
+
+/* HERO FLEX LAYOUT */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+/* LEFT PROFILE */
+.hero-left {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    transition: 0.4s;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+/* RIGHT CONTENT */
+.hero-right {
+    flex: 1.2;
+    max-width: 650px;
+}
+
+/* TEXT */
+.intro {
+    font-size: 22px;
+    opacity: 0.85;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-bottom: 25px;
+}
+
+.hero-buttons .button {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* SKILL BADGES */
+.hero-skills span {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 6px 6px 0 0;
+    background: rgba(255,255,255,0.12);
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.hero-skills span:hover {
+    background: #9bf1ff;
+    color: #242943;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 980px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .name {
+        font-size: 46px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+}
