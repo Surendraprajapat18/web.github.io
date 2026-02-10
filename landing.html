@@ -1,632 +1,536 @@
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>Projects</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<head>
+    <title>Projects | Surendra Prajapat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="icon" href="images/Profile.png" type="image/png">
+</head>
+<body class="is-preload">
 
-		<!-- Favicon -->
-		<link rel="icon" href="images\Profile.png" type="images\Profile.png">
-	</head>
-	<body class="is-preload">
+    <div id="wrapper">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Header -->
+    <header id="header" class="alt">
+        <a href="index.html" class="logo"><strong>Surendra</strong> <span>Projects</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Projects</strong></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="landing.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Projects</a></li>
-							<li><a href="about.html">About</a></li>
+        <!-- Main -->
+        <div id="main">
 
-						</ul>
-					</nav>
+            <!-- Banner -->
+            <section id="banner" class="major">
+                <div class="inner">
+                    <header class="major">
+                        <h1>My Portfolio Projects</h1>
+                    </header>
+                    <div class="content">
+                        <p>Exploring Data Engineering, Machine Learning, Cloud Computing & Business Intelligence</p>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/pic07.png" alt="" />
-							</span>
-							<header class="major">
-								<h1>SURENDRA PRAJAPAT</h1>
-							</header>
-							<div class="content">
-								<p>Data Analyst/Data Engineer skilled in SQL(Intermediate), DBMS, Python, Machine Learning, Power BI, AWS(S3, EC2 Instance, IAM).</p>
-							</div>
-						</div>
-					</section>
+            <!-- Filter Section -->
+            <div class="inner">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                    <button class="filter-btn" onclick="filterProjects('aws')">AWS</button>
+                    <button class="filter-btn" onclick="filterProjects('airflow')">Airflow</button>
+                    <button class="filter-btn" onclick="filterProjects('ml')">Machine Learning</button>
+                    <button class="filter-btn" onclick="filterProjects('powerbi')">Power BI</button>
+                    <button class="filter-btn" onclick="filterProjects('excel')">Excel</button>
+                </div>
+            </div>
 
-				<!-- Main -->
-					<div id="main">
+            <!-- AWS Projects -->
+            <div class="inner category-section" id="section-aws" data-category="aws">
+                <div class="section-divider">
+                    <h2>AWS & Cloud Computing</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/chatbot_architecture.png" alt="AWS Chatbot" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">AWS</span>
+                            <h3 class="project-title">Chatbot using AWS Bedrock, Kendra & Serverless</h3>
+                            <p class="project-description">Built an intelligent chatbot leveraging Amazon Bedrock for generative AI, Kendra for enterprise search, and Lambda for serverless deployment.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS Bedrock</span>
+                                <span class="tech-tag">Kendra</span>
+                                <span class="tech-tag">Lambda</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://lnkd.in/dbzEYbJc" target="_blank" class="project-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>About Project</h2>
-									</header>
-									<p>I successfully led and executed a multifaceted project integrating Apache Airflow, Machine Learning, Excel, 
-										and Power BI to streamline data processes and enhance analytical capabilities. The project included designing and 
-										implementing an Airflow pipeline for ETL processes, developing robust machine-learning models for predictive analytics, 
-										ensuring data integrity through advanced Excel data cleaning techniques, and creating dynamic Power BI dashboards for 
-										insightful visualizations. This comprehensive approach not only improved data efficiency and accuracy but also provided 
-										stakeholders with powerful tools for data-driven decision-making. The project showcased my proficiency in diverse technologies 
-										and my ability to deliver end-to-end solutions in the realm of data analytics.</p>
-								</div>
-							</section>
+                    <div class="project-card">
+                        <img src="images/own_gpt.png" alt="OWN GPT" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">AWS</span>
+                            <h3 class="project-title">OWN GPT using AWS Bedrock</h3>
+                            <p class="project-description">Created a versatile AI platform with text generation via Llama 2, image generation via Stable Diffusion, and code generation via Claude.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Bedrock</span>
+                                <span class="tech-tag">Llama 2</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/OWN-GPT-Using-Amazon-Web-Services-AWS-Bedrock" target="_blank" class="project-btn">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
+            <!-- Airflow Projects -->
+            <div class="inner category-section" id="section-airflow" data-category="airflow">
+                <div class="section-divider">
+                    <h2>Data Orchestration & ETL</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/Spotify_etl_architecture.jpg" alt="Spotify ETL" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Airflow</span>
+                            <h3 class="project-title">Spotify ETL Pipeline with Apache Airflow</h3>
+                            <p class="project-description">Developed a production-grade ETL pipeline to extract, transform, and load Spotify data into AWS S3 using Apache Airflow orchestration.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Apache Airflow</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AWS S3</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/airflow_spotify_etl_pipeline" target="_blank" class="project-btn">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Machine Learning Projects -->
+            <div class="inner category-section" id="section-ml" data-category="ml">
+                <div class="section-divider">
+                    <h2>Machine Learning & AI</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/streamlit_app_RAS.png" alt="Road Accident" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">ML</span>
+                            <h3 class="project-title">Road Accident Severity Prediction</h3>
+                            <p class="project-description">ML model predicting injury severity with 83.3% accuracy. Features EDA, preprocessing, feature engineering, and Streamlit deployment.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://rta-project.onrender.com/" target="_blank" class="project-btn">Run App</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<!-- Buttons -->
-								<center>
-									<!-- AWS Button -->
-									<button onclick="scrollToSection('aws_section')" class="button" style="background-color: #3498db;">AWS</button>
-									
-									<!-- Airflow Pipeline Button -->
-									<button onclick="scrollToSection('airflow_pipeline')" class="button" style="background-color: #3498db;">Airflow</button>
+                    <div class="project-card">
+                        <img src="images/Sonar-rock-mine.png" alt="SONAR" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">ML</span>
+                            <h3 class="project-title">SONAR Rock vs Mine Prediction</h3>
+                            <p class="project-description">Logistic Regression model achieving 83.4% accuracy in classifying rock and mine signals with optimized feature engineering.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Logistic Regression</span>
+                                <span class="tech-tag">Feature Engineering</span>
+                                <span class="tech-tag">Jupyter</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%201%20_%20SONAR%20Rock%20vs%20Mine%20Prediction.ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
 
-									<!-- Machine Learning Button -->
-									<button onclick="scrollToSection('mlSection')" class="button" style="background-color: #2ecc71;">Machine Learning</button>
+                    <div class="project-card">
+                        <img src="images/diabetic_prediction_ML.png" alt="Diabetes Prediction" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">ML</span>
+                            <h3 class="project-title">Diabetes Prediction Model</h3>
+                            <p class="project-description">Predictive model with 78.6% accuracy using feature selection and ensemble methods for early diabetes detection.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Ensemble Methods</span>
+                                <span class="tech-tag">Feature Selection</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%202_%20Diabetes%20Prediction.ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
 
-									<!-- Power BI Button -->
-									<button onclick="scrollToSection('powerBiSection')" class="button" style="background-color: #e74c3c;">Power BI</button>
+                    <div class="project-card">
+                        <img src="images/MNIST-Digit-classification.png" alt="MNIST" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Deep Learning</span>
+                            <h3 class="project-title">MNIST Handwritten Digit Classification</h3>
+                            <p class="project-description">Deep neural network for accurate handwritten digit classification with various architecture optimizations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Neural Networks</span>
+                                <span class="tech-tag">Keras</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/DL_Project_2_MNIST_Digit_Classification_with_Neural_Network.ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
 
-									<!-- Excel Button -->
-									<button onclick="scrollToSection('excelSection')" class="button" style="background-color: #f39c12;">Excel</button>
-								</center>
-								
+                    <div class="project-card">
+                        <img src="images/Dog-Cat.png" alt="Dog vs Cat" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Deep Learning</span>
+                            <h3 class="project-title">Dog vs Cat Classification</h3>
+                            <p class="project-description">Transfer learning model achieving 98.7% accuracy in image classification with efficient training on limited datasets.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Transfer Learning</span>
+                                <span class="tech-tag">CNN</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/DL_Project_3_Dog_vs_Cat_Classification_using_Transfer_Learning%20(2).ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="project-card">
+                        <img src="images/Spam-mail.png" alt="Spam Detection" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">ML</span>
+                            <h3 class="project-title">Spam Mail Prediction</h3>
+                            <p class="project-description">Email classification system with 96.6% precision using text preprocessing and multiple algorithm experimentation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Text Classification</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%205_%20Spam%20Mail%20Prediction.ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<header class="major">
-									<h2>AWS</h2>
-								</header>
+                    <div class="project-card">
+                        <img src="images/Parkinson-disease.png" alt="Parkinson's" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">ML</span>
+                            <h3 class="project-title">Parkinson's Disease Detection</h3>
+                            <p class="project-description">Medical diagnosis model with 88.4% accuracy leveraging feature scaling and hyperparameter tuning techniques.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Healthcare ML</span>
+                                <span class="tech-tag">Feature Scaling</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project_15_Parkinson's_Disease_Detection.ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section id="aws_section">
-									<a href="" class="image">
-										<img src="images/chatbot_architecture.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Chatbot using AWS Bedrock, Kendra, and Serverless<h4>AWS</h4></h3>
-											</header>
-											<p>• Amazon Bedrock Integration: Simplified the creation and scaling of generative AI applications using foundational models.<br>
-											   • Amazon Kendra Utilization: Implemented intelligent enterprise search across various content repositories for enhanced information retrieval.<br>
-											   • AWS Lambda Deployment: Leveraged serverless computing to execute code in response to events, ensuring efficient resource management.<br>
-											   Comprehensive Project Showcase: Detailed repository available on GitHub, demonstrating the practical application of AWS services in building a sophisticated chatbot. <br>
-											   
-												
-												</p>
-											<ul class="actions">
-												<li><a href="https://lnkd.in/dbzEYbJc" target="_blank" class="button">Project Link</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/Movie-recommandation.png" alt="Movie Recommendation" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">ML</span>
+                            <h3 class="project-title">Movie Recommendation System</h3>
+                            <p class="project-description">Collaborative filtering-based recommendation system providing personalized movie suggestions to users.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Collaborative Filtering</span>
+                                <span class="tech-tag">Recommendation</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%206_%20Movie%20Recommendation%20System.ipynb" target="_blank" class="project-btn">View Notebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/own_gpt.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>OWN GPT Using Amazon Web Services (AWS) Bedrock<h4>AWS</h4></h3>
-											</header>
-											<p>I've harnessed the power of AWS Bedrock to create a versatile AI platform that delivers:<br>
+            <!-- Power BI Projects -->
+            <div class="inner category-section" id="section-powerbi" data-category="powerbi">
+                <div class="section-divider">
+                    <h2>Business Intelligence & Analytics</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/Revenue_Insights.jpg" alt="Revenue Insights" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">Revenue Insights - Hospitality Domain</h3>
+                            <p class="project-description">Comprehensive dashboard for hospitality revenue analysis with custom metrics (RevPAR, ADR, DSRN, DBRN, DURN).</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">DAX</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/revenue-insights-hospitality-domain-2" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-											   • 📝 Text Generation(Meta.llama2): Engaging and coherent conversations like ChatGPT.<br>
-											   • 🎨 Image Generation(stability. stable-diffusion): Stunning visuals from text prompts, inspired by MidJourney.<br>
-											   • 💻 Code Generation(anthropic.claude): Efficient code solutions, similar to CodeX.<br>
+                    <div class="project-card">
+                        <img src="images/SS_report.jpg" alt="SS Retail" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">SS Retail Data Report Dashboard</h3>
+                            <p class="project-description">Integrated retail analytics dashboard enabling data-driven decision-making for sales and inventory management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Data Integration</span>
+                                <span class="tech-tag">Retail Analytics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/ss-retail-data-power-bi-dashboard" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-											   Key technologies driving this project include Meta.llama2, Stability.AI's Stable Diffusion, and Anthropic.claude. I've developed a sleek web interface using Streamlit for easy public access.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/OWN-GPT-Using-Amazon-Web-Services-AWS-Bedrock" target="_blank" class="button">Project Link</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/01_AttendenceRepoprt.jpg" alt="Attendance Analysis" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">Attendance Data Analysis Dashboard</h3>
+                            <p class="project-description">Employee attendance analytics providing insights into engagement patterns and optimizing management processes.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">HR Analytics</span>
+                                <span class="tech-tag">Dashboards</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/attendance-analytics-dashborad" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								
-								<header class="major">
-									<h2>Airflow Pipeline</h2>
-								</header>
+                    <div class="project-card">
+                        <img src="images/Global_Super_Store (1).jpg" alt="Global Superstore" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">Global Superstore Data Analysis</h3>
+                            <p class="project-description">Dynamic dashboard analyzing global sales trends, quarterly comparisons (2011-2014), and inventory optimization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Sales Analytics</span>
+                                <span class="tech-tag">Time Series</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/global-superstore-data-analysis" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section id="airflow_pipeline">
-									<a href="" class="image">
-										<img src="images/Spotify_etl_architecture.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Spotify ETL(Extract-Transfer-Load) Pipeline<h4>Airflow</h4></h3>
-											</header>
-											<p>• Developed an ETL pipeline to extract, transform, and load data from Spotify's API into a data warehouse (AWS S3) using Apache Airflow.<br>
-											   • Utilized Python for scripting and orchestration to automate data extraction and transformation processes. <br>
-											   
-												
-												</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/airflow_spotify_etl_pipeline" target="_blank" class="button">Project Link</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								
-								<header class="major">
-									<h2>Machine Learning</h2>
-								</header>
+                    <div class="project-card">
+                        <img src="images/01_IMDBAnalysis.jpg" alt="IMDB Analysis" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">IMDB Movies Analysis Dashboard</h3>
+                            <p class="project-description">Entertainment analytics exploring correlations between budget, genre, ratings and movie performance metrics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Entertainment</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/imdb-movies-analysis-dashboard" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section id="mlSection">
-									<a href="" class="image">
-										<img src="images/streamlit_app_RAS.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Road Accident Severity Prediction App<h4>Machine Learning</h4></h3>
-											</header>
-											<p>• ML model which predicts a person has a Slight Injury, Serious injury, or Fatal Injury based on experience, weekday, driver age, etc, and achieves 83.3% accuracy<br>
-												(➡️ Project Flow ➡️ Data collection ➡️ EDA(Exploratory Data Analysis) ➡️ Data Preprocessing ➡️ Feature Engineering ➡️ Data Modelling)<br>
-												
-												</p>
-											<ul class="actions">
-												<li><a href="https://rta-project.onrender.com/" target="_blank" class="button">Run App</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								
-								<section>
-									<a href="" class="image">
-										<img src="images/Sonar-rock-mine.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>SONAR Rock vs Mine Prediction<h4>Logistic Regression(ML)</h4></h3>
-											</header>
-											<p>• Achieved an accuracy of 83.4% in distinguishing between rock and mine signals using machine learning techniques.<br>
-												• Implemented feature engineering and model optimization to enhance accuracy and efficiency.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%201%20_%20SONAR%20Rock%20vs%20Mine%20Prediction.ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/CustomerAnalysis.jpg" alt="Customer Analysis" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">Customer Data Analysis Dashboard</h3>
+                            <p class="project-description">E-commerce analytics revealing customer preferences, behavior patterns, and sales by demographic segments.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">E-commerce</span>
+                                <span class="tech-tag">Customer Analytics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/customer-data-analysis-dashboard" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/diabetic_prediction_ML.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Diabetes Prediction<h4>Machine Learning</h4></h3>
-											</header>
-											<p>• Developed a predictive model with 78.6% accuracy to identify diabetes in patients.<br> 
-												• Employed feature selection and ensemble methods to improve model performance.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%202_%20Diabetes%20Prediction.ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/Layoff (1).jpg" alt="Layoffs Analysis" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">Layoffs 2020-2022 Analysis Dashboard</h3>
+                            <p class="project-description">Economic analysis of layoff trends across industries, geographic distribution, and contributing factors.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Economic Analysis</span>
+                                <span class="tech-tag">Trends</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/layoffs-2020-2022-analysis-dashboard" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/MNIST-Digit-classification.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>MNIST Handwritten Digit Classification <h4>Neural Network (DL)</h4></h3>
-											</header>
-											<p>• Implemented a deep learning neural network to achieve accurate classification of handwritten digits in the MNIST dataset.<br>
-												• Experimented with various architectures to optimize accuracy and reduce overfitting.
-											</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/DL_Project_2_MNIST_Digit_Classification_with_Neural_Network.ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/Covid_Cases.jpg" alt="COVID-19 Analysis" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Power BI</span>
+                            <h3 class="project-title">COVID-19 Data Analysis Dashboard</h3>
+                            <p class="project-description">Global pandemic tracking dashboard displaying infection rates, new cases, critical cases, and mortality data.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Health Analytics</span>
+                                <span class="tech-tag">Global Data</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.novypro.com/project/covid-19-data-analysis-dashboard" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/Dog-Cat.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Dog vs Cat Classification<h4>Transfer Learning (DL)</h4></h3>
-											</header>
-											<p>• Demonstrated exceptional accuracy of 98.7% in classifying images of dogs and cats.<br>
-												• Leveraged transfer learning to efficiently train a deep neural network on a limited dataset</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/DL_Project_3_Dog_vs_Cat_Classification_using_Transfer_Learning%20(2).ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+            <!-- Excel Projects -->
+            <div class="inner category-section" id="section-excel" data-category="excel">
+                <div class="section-divider">
+                    <h2>Data Analysis with Excel</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/US-President_clean.png" alt="US President" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Excel</span>
+                            <h3 class="project-title">US President Data Cleaning</h3>
+                            <p class="project-description">Historical presidential data cleaning and preprocessing using advanced Excel functions and quality assurance.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Data Cleaning</span>
+                                <span class="tech-tag">Excel Formulas</span>
+                                <span class="tech-tag">QA</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Excel_Project/blob/main/US%20Presidetn%20Data%20cleaning.xlsx" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/Spam-mail.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Spam Mail Prediction<h4>Machine Learning</h4></h3>
-											</header>
-											<p>• Developed a highly accurate model with 96.6% precision to classify spam emails.<br> 
-												• Employed text preprocessing techniques and experimented with different algorithms to achieve exceptional results.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%205_%20Spam%20Mail%20Prediction.ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/Vrinda_store.png" alt="Vrinda Store" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Excel</span>
+                            <h3 class="project-title">Vrinda Store Data Analysis Dashboard</h3>
+                            <p class="project-description">Comprehensive retail sales dashboard with pivot tables and interactive visualizations for sales insights.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Pivot Tables</span>
+                                <span class="tech-tag">Charts</span>
+                                <span class="tech-tag">Dashboards</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Excel_Project/blob/main/Vrinda%20Store%20Data%20Analysis.xlsx" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/Parkinson-disease.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Parkinson's Disease Detection<h4>Machine Learning</h4></h3>
-											</header>
-											<p>• Created a machine learning model with an 88.4% accuracy rate for detecting Parkinson's disease based on patient data. <br>
-												• Utilized feature scaling and hyperparameter tuning to increase model accuracy.
-											</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project_15_Parkinson's_Disease_Detection.ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+                    <div class="project-card">
+                        <img src="images/BIKE-SALES.png" alt="Bike Sales" class="project-image" />
+                        <div class="project-body">
+                            <span class="project-category">Excel</span>
+                            <h3 class="project-title">Bike Sales Data Analysis Dashboard</h3>
+                            <p class="project-description">Bike sales dashboard analyzing trends, customer preferences, and key performance indicators with visual analytics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Excel Charts</span>
+                                <span class="tech-tag">KPI Analysis</span>
+                                <span class="tech-tag">Dashboards</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Surendraprajapat18/Excel_Project/blob/main/Bike%20Sales%20Dashboard%20Excel.xlsx" target="_blank" class="project-btn">View Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/Movie-recommandation.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Movie Recommendation System<h4>Machine Learning</h4></h3>
-											</header>
-											<p>• Implemented a recommendation system that suggests movies to users based on their preferences.<br>
-												• Utilized collaborative filtering techniques and evaluated the system's effectiveness using various metrics.
-											</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Machine-Learning/blob/main/Project%206_%20Movie%20Recommendation%20System.ipynb" target="_blank" class="button">View Notebook</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+            <!-- CTA Section -->
+            <div class="inner">
+                <section class="cta-section">
+                    <h2>Ready to Collaborate?</h2>
+                    <p>Let's build something amazing together. Connect with me on GitHub and LinkedIn for complete project repositories and discussions.</p>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/Surendraprajapat18" target="_blank" class="cta-btn">Visit GitHub</a>
+                        <a href="https://www.linkedin.com/in/surendraprajapat18" target="_blank" class="cta-btn">Connect on LinkedIn</a>
+                        <a href="about.html" class="cta-btn">Learn About Me</a>
+                    </div>
+                </section>
+            </div>
 
-							
+        </div>
 
-								<header class="major">
-									<h2>Power BI</h2>
-								</header>
-								<section id="powerBiSection">
-									<a href="" class="image">
-										<img src="images/Revenue_Insights.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Revenue Insights Hospitality Domain<h4>Power BI</h4></h3>
-											</header>
-											<p>• Designed and developed a comprehensive report dashboard for revenue analysis in the hospitality domain.<br>
-												• Utilized Power BI to create interactive visualizations, enabling stakeholders to identify trends and 
-												make informed decisions. For this dashboard created columns and measures for RevPAR(Revenue per available room), 
-												DSRN(Daily sellable room nights), ADR(Average Daily Rate), DBRN(Daily Booked Room Nights), DURN(Daily Utilized 
-												Room Nights) to analyze data very well.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/revenue-insights-hospitality-domain-2" target="_blank" class="button">View Report</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/Surendraprajapat18" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/surendraprajapat18" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://www.kaggle.com/surendraprajapat" target="_blank" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+                </ul>
+            </div>
+        </footer>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/SS_report.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>SS Retail Data Report Dashboard <h4>Power BI</h4></h3>
-											</header>
-											<p>• Project Scope: Developed a comprehensive Power BI Retail Data Report Dashboard.
-												Integrated data from various sources, ensuring accuracy and consistency.<br>
+    </div>
 
-												• Key Achievements: Enabled data-driven decision-making through insightful sales analysis.
-												Improved inventory management and customer engagement strategies.
-												Defined and monitored key performance indicators for business success.<br>
-												
-												• Outcome: Empowered stakeholders with actionable insights.
-												Enhanced sales strategies and overall business efficiency.
-												Contributed to increased profitability through informed decision-making.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/ss-retail-data-power-bi-dashboard" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/01_AttendenceRepoprt.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Attendance Data Analysis Dashboard <h4>Power BI</h4></h3>
-											</header>
-											<p>•Developed a Power BI dashboard to analyze attendance patterns of employees.<br>
-												•The dashboard provided insights into employee engagement and helped in optimizing attendance management processes.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/attendance-analytics-dashborad" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+    <script>
+        function filterProjects(category) {
+            const sections = document.querySelectorAll('.category-section');
+            const buttons = document.querySelectorAll('.filter-btn');
 
-								<section>
-									<a href="" class="image">
-										<img src="images/Global_Super_Store (1).jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Global Superstore Data Analysis <h4>Power BI</h4></h3>
-											</header>
-											<p>• Created a dynamic Power BI dashboard to analyze sales data from a global superstore, leading to insights that improved 
-												inventory management and profitability and also compare quarterly sales from 2011 to 2014.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/global-superstore-data-analysis" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
 
-								<section>
-									<a href="" class="image">
-										<img src="images/01_IMDBAnalysis.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>IMDB Movies Analysis Dashboard <h4>Power BI</h4></h3>
-											</header>
-											<p>• Created a Power BI dashboard to analyze IMDB movie data, exploring factors influencing movie ratings and votes.<br>
-												• Implemented visualizations to showcase correlations between budget, genre, and performance.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/imdb-movies-analysis-dashboard" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+            // Filter sections
+            if (category === 'all') {
+                sections.forEach(section => section.style.display = 'block');
+            } else {
+                sections.forEach(section => {
+                    if (section.dataset.category === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        }
+    </script>
 
-								<section>
-									<a href="" class="image">
-										<img src="images/CustomerAnalysis.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Customer Data Analysis Dashboard <h4>Power BI</h4></h3>
-											</header>
-											<p>• Designed a Power BI dashboard to analyze customer preferences and buying behavior for an e-commerce platform.<br>
-												• Extracted insights into the total SKUs available for customers, total category, and highest sales by age group.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/customer-data-analysis-dashboard" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								
-								<section>
-									<a href="" class="image">
-										<img src="images/Layoff (1).jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Layoffs 2020-2022 Analysis Dashboard <h4>Power BI</h4></h3>
-											</header>
-											<p>• Developed a Power BI dashboard to analyze layoff trends across various industries from 2020 to 2022.<br>
-												• Provided visualizations depicting affected sectors, geographic distribution, and potential factors contributing to layoffs.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/layoffs-2020-2022-analysis-dashboard" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<a href="" class="image">
-										<img src="images/Covid_Cases.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Covid-19 Data Analysis Dashboard <h4>Power BI</h4></h3>
-											</header>
-											<p>• Created an informative Power BI dashboard to track Covid-19 statistics globally and regionally.<br>
-												• Utilized data visualization to display infection rates, new cases, serious & critical cases and Deaths.</p>
-											<ul class="actions">
-												<li><a href="https://www.novypro.com/project/covid-19-data-analysis-dashboard" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-
-								<header class="major">
-									<h2>Excel</h2>
-								</header>
-								<section id="excelSection">
-									<a href="" class="image">
-										<img src="images/US-President_clean.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>US President Data Cleaning <h4>Excel</h4></h3>
-											</header>
-											<p>• Cleaned and preprocessed historical US President data advanced Excel functions.<br>
-												• Conducted data quality checks, corrected inconsistencies, and standardized formats.
-											</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Excel_Project/blob/main/US%20Presidetn%20Data%20cleaning.xlsx" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="" class="image">
-										<img src="images/Vrinda_store.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Vrinda Store Data Analysis Dashboard <h4>Excel</h4></h3>
-											</header>
-											<p>• Created a comprehensive Excel dashboard for analyzing sales data of Vrinda Store.<br>
-												• Developed interactive visualizations and used pivot tables to extract insights.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Excel_Project/blob/main/Vrinda%20Store%20Data%20Analysis.xlsx" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<a href="" class="image">
-										<img src="images/BIKE-SALES.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Bike Sales Data Analysis Dashboard <h4>Excel</h4></h3>
-											</header>
-											<p>• Designed an Excel dashboard to analyze bike sales trends and customer preferences.<br>
-												• Utilized charts and graphs to showcase key performance indicators.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/Surendraprajapat18/Excel_Project/blob/main/Bike%20Sales%20Dashboard%20Excel.xlsx" target="_blank" class="button">View Report</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Objective</h2>
-									</header>
-									<p>Highly motivated B.Tech graduate with a strong foundation in data analysis and engineering. Seeking a challenging position that combines the roles of Data Analyst and Data Engineer, where I can leverage my skills in Python, SQL, AWS, and data visualization to extract valuable insights and contribute to data-driven decision-making processes.</p>
-									<ul class="actions">
-										<li><a href="about.html" class="button next">About Surendra</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Contact 
-					<section id="contact">
-						<div class="inner">
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">prajapatsurendra78980@gmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(+91) 7415457965</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>Nandbag Colony<br />
-										Indore<br />
-										Madhya Pradesh, India</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-				-->
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/Surendraprajapat18" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/surendraprajapat18" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn/</span></a></li>
-								<li><a href="https://www.instagram.com/thisissurendra17/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>	
-								<li><a href="https://www.kaggle.com/surendraprajapat" class="icon brands alt fa-kaggle"><span class="label">kaggle</span></a></li>
-							</ul>
-							
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			<script>
-				function scrollToSection(sectionId) {
-					var section = document.getElementById(sectionId);
-					if (section) {
-						section.scrollIntoView({ behavior: 'smooth' });
-					}
-				}
-			</script>
-
-	</body>
+</body>
 </html>
