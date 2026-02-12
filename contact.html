@@ -186,52 +186,40 @@
 <!-- ================= GOOGLE SHEET SCRIPT ================= -->
 <script>
 
-    const scriptURL =
-        "https://script.google.com/macros/s/AKfycbydA6ZERVVEiUR8tdwxO6TcNx0Ml1nLZqssLrxCgV4mOF2jtqselVavre1wWuctVbHfEw/exec";
+const scriptURL =
+"https://script.google.com/macros/s/AKfycbyT0gYgrF4jS6hsikuxnYzNDS--56YTQQ50410vb4VZ9ctQ96hil9mR3YVELPzhRtU1oQ/exec";
 
-    const form = document.getElementById("contact-form");
-    const status = document.getElementById("status");
+const form = document.getElementById("contact-form");
+const status = document.getElementById("status");
 
-    form.addEventListener("submit", function(e){
+form.addEventListener("submit", function(e){
 
-        e.preventDefault();
+    e.preventDefault();
 
-        const formData = new FormData(form);
+    const formData = new FormData(form);
 
-        fetch(scriptURL, {
-            method: "POST",
-            body: formData
-        })
-            .then(res => res.text())
-            .then(data => {
+    fetch(scriptURL, {
+    method: "POST",
+    body: formData
+    })
+    .then(res => res.text())
+    .then(data => {
 
-                status.innerHTML =
-                    "✅ Message Sent Successfully!";
-                status.style.color = "#6fc3df";
-
-                form.reset();
-
-            })
-            .catch(err => {
-
-                status.innerHTML =
-                    "❌ Error sending message.";
-                status.style.color = "red";
-
-            });
-
+        if(data === "Success"){
+            status.innerHTML = "✅ Message Sent Successfully!";
+            form.reset();
+        } else {
+            status.innerHTML = "❌ Error sending message.";
+        }
+    })
+    .catch(() => {
+        status.innerHTML = "❌ Error sending message.";
     });
 
+
+});
 </script>
 
-<!-- Template Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>
