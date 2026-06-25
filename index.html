@@ -8,6 +8,39 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="icon" href="images/Profile.png" type="image/png">
+
+    <!-- Certification cards styling (scoped, safe to move into main.css later) -->
+    <style>
+        .cert-row { align-items: stretch; }
+        .cert-card {
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .cert-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+        }
+        .cert-badge {
+            width: 84px;
+            height: 84px;
+            margin-bottom: 1em;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+        }
+        .cert-badge svg { width: 100%; height: 100%; }
+        .cert-card h3 {
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+        .cert-card p {
+            font-size: 0.85em;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -102,23 +135,90 @@
         </div>
     </section>
 
+    <!-- ================= CERTIFICATIONS SECTION ================= -->
+
+    <section id="certifications" class="alt">
+        <div class="inner">
+
+            <header class="major">
+                <h2>Certifications</h2>
+            </header>
+
+            <div class="row cert-row">
+
+                <div class="col-4 col-12-medium">
+                    <div class="box cert-card">
+                        <div class="cert-badge cert-badge--aws">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#232F3E"/>
+                                <circle cx="32" cy="32" r="30" fill="none" stroke="#FF9900" stroke-width="2"/>
+                                <path d="M18 38c5 4 11 6 14 6s9-2 14-6" fill="none" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round"/>
+                                <path d="M40 36l4 1-1 4" fill="none" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <text x="32" y="27" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">AWS</text>
+                            </svg>
+                        </div>
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Foundational certification covering AWS cloud concepts, core services, security, and billing.</p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <div class="box cert-card">
+                        <div class="cert-badge cert-badge--aws">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#232F3E"/>
+                                <circle cx="32" cy="32" r="30" fill="none" stroke="#FF9900" stroke-width="2"/>
+                                <path d="M20 40l8-16 4 8 4-6 8 14" fill="none" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <text x="32" y="22" font-family="Arial, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">SAA</text>
+                            </svg>
+                        </div>
+                        <h3>AWS Solutions Architect Associate</h3>
+                        <p>Validates the ability to design available, cost-efficient, and scalable distributed systems on AWS.</p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <div class="box cert-card">
+                        <div class="cert-badge cert-badge--databricks">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#1B1F25"/>
+                                <circle cx="32" cy="32" r="30" fill="none" stroke="#FF3621" stroke-width="2"/>
+                                <path d="M20 24l12-6 12 6-12 6z" fill="#FF3621"/>
+                                <path d="M20 32l12 6 12-6" fill="none" stroke="#FF3621" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 40l12 6 12-6" fill="none" stroke="#FF3621" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Databricks Certified Data Engineer Associate</h3>
+                        <p>Demonstrates proficiency in building data pipelines using Databricks and the Lakehouse platform.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <ul class="actions" style="justify-content:center; margin-top: 2em;">
+                <li><a href="about.html#certifications" class="button">View All Credentials</a></li>
+            </ul> -->
+
+        </div>
+    </section>
+
     <!-- ================= FEATURED WORK ================= -->
 
-    <section id="main">
+    <section id="work">
         <div class="inner">
 
             <header class="major">
                 <h2>Featured Work</h2>
             </header>
 
-            <div id="main">
+            <div>
 
                 <!-- One -->
                 <section id="one" class="tiles">
 
                     <article>
                         <span class="image">
-                            <img src="images/Revenue_Insights.jpg" alt="" width="original_width" height="original_height" />	
+                            <img src="images/Revenue_Insights.jpg" alt="" />	
                         </span>
                         <header class="major">
                             <h3><a href="landing.html" class="link">Revenue Insights Hospitality Domain</a></h3>
@@ -128,7 +228,7 @@
 
                     <article>
                         <span class="image">
-                            <img src="images/SS_report.jpg" alt="" width="original_width" height="original_height" />
+                            <img src="images/SS_report.jpg" alt="" />
                         </span>
                         <header class="major">
                             <h3><a href="landing.html" class="link">SS Retail Data Report Dashboard</a></h3>
@@ -138,7 +238,7 @@
 
                     <article>
                         <span class="image">
-                            <img src="images/US-President_clean.png" alt="" width="original_width" height="original_height" />
+                            <img src="images/US-President_clean.png" alt="" />
                         </span>
                         <header class="major">
                             <h3><a href="landing.html" class="link">US President Data Cleaning</a></h3>
@@ -148,7 +248,7 @@
 
                     <article>
                         <span class="image">
-                            <img src="images/Vrinda_store.png" alt="" width="original_width" height="original_height" />
+                            <img src="images/Vrinda_store.png" alt="" />
                         </span>
                         <header class="major">
                             <h3><a href="landing.html" class="link">Vrinda Store Data Analysis Dashboard</a></h3>
